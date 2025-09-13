@@ -1,0 +1,42 @@
+{
+  "name": "app",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "astro": "astro",
+    "start:dev": "env-cmd -f .env.development astro dev",
+    "start:prod": "env-cmd -f .env.production astro dev",
+    "build:dev": "env-cmd -f .env.development astro build",
+    "build:prod": "env-cmd -f .env.production astro build",
+    "lint": "eslint . --ext ts,tsx",
+    "prepare": "husky",
+    "tsc": "tsc"
+  },
+  "dependencies": {
+    "@astrojs/react": "^4.3.1",
+    "@astrojs/vercel": "^8.2.7",
+    "@sentry/react": "^10.11.0",
+    "@supabase/supabase-js": "^2.57.4",
+    "astro": "^5.13.6",
+    "luxon": "^3.5.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.13",
+    "@types/luxon": "^3.4.2",
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
+    "@typescript-eslint/eslint-plugin": "^8.18.1",
+    "@typescript-eslint/parser": "^8.18.1",
+    "env-cmd": "^11.0.0",
+    "eslint": "^8.16.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.32.2",
+    "husky": "^9.1.7",
+    "prettier": "^2.6.2",
+    "tailwindcss": "^4.1.13",
+    "typescript": "^5.7.2"
+  }
+}

@@ -1,0 +1,31 @@
+---
+// Styles
+import "../global.css";
+
+const { title } = Astro.props
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>{title}</title>
+
+    <!-- Favicon -->
+    <link rel="favicon" href="/images/favicon.png" />
+    <link rel="shortcut icon" href="/images/favicon.png" />
+    <link rel="bookmark" href="/images/favicon.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Headers -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="initial-scale=1" />
+  </head>
+
+  <body>
+    <slot />
+  </body>
+</html>

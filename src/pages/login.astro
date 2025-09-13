@@ -1,0 +1,17 @@
+---
+// Layouts
+import BaseLayout from "@/layouts/base.layout.astro";
+
+// Helpers
+import { isLoggedIn } from "@/helpers/auth.helper";
+
+const { cookies, redirect } = Astro;
+
+if (isLoggedIn(cookies)) {
+  return redirect("/");
+}
+---
+
+<BaseLayout title="Login">
+  <!-- Page contents here -->
+</BaseLayout>
