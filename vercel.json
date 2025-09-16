@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "bun run build",
+  "cleanUrls": true,
+  "devCommand": "bun run start",
+  "framework": "astro",
+  "installCommand": "bun install --frozen-lockfile",
+  "outputDirectory": "dist",
+  "regions": ["sin1"]
+}
